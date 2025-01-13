@@ -9,6 +9,8 @@
     --white: #ffffff;
     --purple: #5C62EC;
 
+    --linear-gr: linear-gradient(45deg, #13547a, #80d0c7);
+
     --text-color: var(--black);
 
     --dark-bg: var(--black);
@@ -69,7 +71,11 @@ html, body {
     font-size: 60px;
     font-weight: 700;
     line-height: 1.3;
-    color: var(--title-1);
+    font-style: normal;
+    background: linear-gradient(45deg, #13547a, #80d0c7);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-align: center;
 }
 
@@ -100,7 +106,12 @@ html, body {
 }
 
 .logo {
-    color: var(--header-text);
+    font-style: normal;
+    background: linear-gradient(45deg, #13547a, #80d0c7);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
     font-family: "Poppins", serif;
     font-size: 24px;
     margin-right: auto;
@@ -141,7 +152,7 @@ html, body {
     display: block;
     width: 100%;
     height: 3px;
-    background-color: var(--accent);
+    background: linear-gradient(45deg, #13547a, #80d0c7);
     left: 0;
     top: 100%;
 }
@@ -219,7 +230,11 @@ html, body {
 
 .header__title em {
     font-style: normal;
-    color: var(--accent);
+    background: linear-gradient(45deg, #13547a, #80d0c7);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
 }
 
 .header__text {
@@ -239,7 +254,7 @@ html, body {
     height: 48px;
     padding: 12px 28px;
     border-radius: 5px;
-    background-color: var(--accent);
+    background: var(--linear-gr);
     color: #ffffff;
     letter-spacing: 0.15px;
     font-size: 16px;
